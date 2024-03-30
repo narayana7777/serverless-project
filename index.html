@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Text Recognition</title>
+</head>
+<body>
+  <h1>Text Recognition</h1>
+  <form method="POST" action="/upload" enctype="multipart/form-data">
+    <input type="file" name="image" accept="image/*" required>
+    <button type="submit">Recognize Text</button>
+  </form>
+  <div>
+    <h2>Recognized Text:</h2>
+    <p>{{ recognized_text }}</p>
+  </div>
+</body>
+</html>
